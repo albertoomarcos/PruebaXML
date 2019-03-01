@@ -22,6 +22,7 @@
 						    
 						</content>						    
 					</Panel>
+					
 					<Text text="{i18n>appTitle}" />
 					<Text text="{i18n>appDescription}" />
 					<Text text="{i18n>showHelloButtonText}" />
