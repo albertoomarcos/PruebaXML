@@ -9,15 +9,19 @@
          <Page title="{i18n>homePageTitle}">
             <content>
                <Panel
-                  headerText="{i18n>helloPanelTitle}">
+                  headerText="{i18n>helloPanelTitle}"
+                  class="sapUiResponsiveMargin"
+				  width="auto">
                  	<content>
 						<Button
 				     		text="Prueba 2"
 				     		press=".onShowHello"
+				     		class="sapUiSmallMarginEnd"
 				     	/>      
 				      	<Button
 				      		text="Prueba 3"
 				      		press=".onShowError"
+				      		class="sapUiSmallMarginEnd"
 				      	/>				
 					</content>
                </Panel>
