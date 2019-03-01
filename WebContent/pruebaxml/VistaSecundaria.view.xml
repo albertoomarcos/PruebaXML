@@ -5,7 +5,7 @@
 	
 		<Button
      		text="Prueba 2"
-     		press=".showToastError"
+     		press=".onShowHello"
      	/>      
       	<Button
       		text="Prueba 3"
