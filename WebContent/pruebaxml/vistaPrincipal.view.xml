@@ -3,7 +3,7 @@
 	<Page title="Title">
 		<content>
 	<Button
-      text="Say Hello"
+       text="{i18n>showHelloButtonText}"
       press=".onShowHello"/>
       
    <Input
