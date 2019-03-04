@@ -34,7 +34,27 @@ sap.ui.define([
           var sMsg = oBundle.getText("helloMsg", [sRecipient]);
           // show message
           MessageToast.show(sMsg);
-      }
+      },
+      onOpenDialog : function () {
+			var oView = this.getView();
+			
+			// create dialog lazily
+			if (!this.byId("helloDialog")) {
+				
+				// load asynchronous XML fragment
+				Fragment.load({
+					id: oView.getId(),
+					name: "pruebaxml.HelloDialog"
+				}).then(function (oDialog) {
+					// connect dialog to the root view of this component (models, lifecycle)
+					oView.addDependent(oDialog);
+					oDialog.open();
+					alert("Error code x0002",{title: "Alerta"});
+				});
+			} else {
+				this.byId("helloDialog").open();
+			}
+		}
    });
 });
 
