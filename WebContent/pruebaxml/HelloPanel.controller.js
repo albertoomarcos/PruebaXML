@@ -35,7 +35,8 @@ sap.ui.define([
           // show message
           MessageToast.show(sMsg);
       },
-      onOpenDialog : function () {
+            
+      onOpenDialogXML : function () {
 			var oView = this.getView();
 			
 			// create dialog lazily
@@ -49,12 +50,33 @@ sap.ui.define([
 					// connect dialog to the root view of this component (models, lifecycle)
 					oView.addDependent(oDialog);
 					oDialog.open();
-					alert("Error code x0002",{title: "Alerta"});
 				});
 			} else {
 				this.byId("helloDialog").open();
 			}
-		}
+		},		 
+		onCloseDialog : function () {
+			 
+			this.getView().byId("helloDialog").close();
+		},
+	    
+	         
+	      onEscapePress: function() {
+	    	 alert("ESC pressed!");
+	      },
+	      _getDialog : function () {
+	         if (!this._oDialog) {
+	            this._oDialog = sap.ui.xmlfragment("pruebaxml.HelloDialog");
+	            this.getView().addDependent(this._oDialog);
+	         }
+	         return this._oDialog;
+	      },
+	      onOpenDialog : function () {
+	         this._getDialog().open();
+	      }
+		
+		
+		
    });
 });
 
