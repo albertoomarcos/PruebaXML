@@ -23,7 +23,7 @@
 				      		press=".onShowError"
 				      		class="sapUiSmallMarginEnd"
 				      	/>	
-				      	<FormattedText 
+				      	<Text 
 				      		text="Hello asfasdf"
 							 class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>				
 				      		
