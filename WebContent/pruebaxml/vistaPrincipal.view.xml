@@ -16,7 +16,7 @@
 							<Button
 						      text="{i18n>showHelloButtonText}"
 						      press=".onShowHello"
-						      class="sapUiSmallMarginEnd"/>
+						      class="myCustomButton"/>
 						      
 						   <Input
 						      value="{/recipient/name}"
@@ -24,17 +24,10 @@
 						      width="60%"/>
 						   <Text
 							  text="Hello {/recipient/name}"
-							  class="sapUiSmallMargin"/>						    
+							  class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>						    
 						</content>						    
 					</Panel>
 					
-					<Text text="{i18n>appTitle}" />
-					<Text text="{i18n>appDescription}" />
-					<Text text="{i18n>showHelloButtonText}" />
-					<Text text="{i18n>helloMsg}" />
-					<Text text="{i18n>homePageTitle}" />
-					<Text text="{i18n>helloPanelTitle}" />
-
 	           		</content>
 	         	</Page>
 	      	</pages>
