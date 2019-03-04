@@ -45,6 +45,16 @@
 		  "uri": "resources/css/style.css"
 		}
 	  ]
-	}
-  }
+	},
+	  "invoicejson": {
+		"type": "sap.ui.model.json.JSONModel",
+		"uri": "resources/json/Invoices.json"
+	  },
+	  "prueba": 
+  	  {
+  	  	"type": "sap.ui.model.json.JSONModel",
+		"uri": "prueba.json"
+  	  }
+  	}
+  	  
 }
