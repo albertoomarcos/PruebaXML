@@ -33,6 +33,9 @@
 				}
 			}
 		},
+		"config": {
+	  	"invoiceLocal": "Invoices.json"
+		},
 		"models": {
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",

@@ -1,0 +1,36 @@
+<mvc:View
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Text text="Prueba2"></Text>
+   <Text text="{/Invoices/0/ProductName}"></Text>
+   <Text text="Prueba2"></Text>
+   <Text text="Prueba2"></Text>
+   	
+    <Table id="abc" items="{path: '/Invoices'}">
+   		<columns>
+   			<Column width="11rem">
+   				<Label text="Product Name"/>
+   				<Text text="Product Name"></Text>
+   			</Column>
+   			<Column width="11rem">
+   				<Label text="Quantity"/>
+   			</Column>  		
+   		</columns>
+   		 <ColumnListItem>
+   			<Text text="{ProductName}"></Text>
+   			<Text text="{Quantity}"></Text>
+   		</ColumnListItem>    
+   </Table> 
+   
+   
+   <!-- <List
+      headerText="{i18n>invoiceListTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      items="{invoice>/Invoices}" >
+      <items>
+         <ObjectListItem
+            title="{invoice>Quantity} x {invoice>ProductName}"/>
+      </items>
+   </List> -->
+</mvc:View>

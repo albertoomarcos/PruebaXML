@@ -3,7 +3,8 @@
    xmlns:mvc="sap.ui.core.mvc">
 	
    <List
-      headerText="{i18n>invoiceListTitle}"
+      
+      headerText="InvoiceList.view"
       class="sapUiResponsiveMargin"
       width="auto"
       items="{invoice>/Invoices}">	

@@ -6,11 +6,13 @@
    <Shell>
 	   <App>
 	      <pages>
-	         <Page title="{i18n>homePageTitle}">
+	         <Page title="VistaPrincipal">
 	            <content>
 					<mvc:XMLView viewName="pruebaxml.HelloPanel"/>
-					<mvc:XMLView viewName="pruebaxml.InvoiceList"/>
-					<mvc:XMLView viewName="pruebaxml.InflateJson"/>					
+					<!--
+					 <mvc:XMLView viewName="view.List"/>
+					 <mvc:XMLView viewName="pruebaxml.InflateJson"/>-->		 
+					<mvc:XMLView viewName="view.List"/>			
 	         	</content>
 	         </Page>
 	      </pages>
