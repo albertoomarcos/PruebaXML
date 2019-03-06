@@ -19,8 +19,6 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageToast",
 
 			// set i18n_es model en la vista
 			var i18nModel = new ResourceModel({
-				// bundleName:
-				// "sap.ui.demo.walkthrough.i18n.i18n"
 				bundleName : "i18n.i18n"
 			});
 			this.getView().setModel(i18nModel, "i18n");
@@ -36,7 +34,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageToast",
 			MessageToast.show(sMsg);
 		},
 
-		onOpenDialogXML : function() {
+		/*onOpenDialogXML : function() {
 			var oView = this.getView();
 
 			// create dialog lazily
@@ -56,16 +54,16 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageToast",
 				this.byId("helloDialog").open();
 			}
 		},
-		onCloseDialog : function() {
+		onCloseDialogXML : function() {
 
 			this.getView().byId("helloDialog").close();
-		},
+		},*/
 		onEscapePress : function() {
 			alert("ESC pressed!");
 		},
 		_getDialog : function() {
 			if (!this._oDialog) {
-				this._oDialog = sap.ui.xmlfragment("pruebaxml.HelloDialog");
+				this._oDialog = sap.ui.xmlfragment("pruebaxml.HelloDialog2", this);
 				this.getView().addDependent(this._oDialog);
 			}
 			return this._oDialog;
@@ -73,15 +71,15 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageToast",
 		onOpenDialog : function() {
 			this._getDialog().open();
 		},
+	    onCloseDialog : function () {
+	         this._getDialog().close();
+	    },
 		onShowError : function() {
-			alert("Error code x0002", {
-				title : "Alerta"
-			});
-		},
-		onCloseDialog2: function()
-		{
+//			alert("Error code x0002", {				
+//				title : "Alerta"
+//			});
+			alert("Has salido (OPCIONAL)");
 			this._getDialog().close();
 		}
-
 	});
 });
