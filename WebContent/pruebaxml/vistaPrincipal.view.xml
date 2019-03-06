@@ -8,7 +8,9 @@
 	      <pages>
 	         <Page title="{i18n>homePageTitle}">
 	            <content>
-					<mvc:XMLView viewName="pruebaxml.HelloPanel"/>					
+					<mvc:XMLView viewName="pruebaxml.HelloPanel"/>
+					<mvc:XMLView viewName="pruebaxml.InvoiceList"/>
+					<mvc:XMLView viewName="pruebaxml.InflateJson"/>					
 	         	</content>
 	         </Page>
 	      </pages>
