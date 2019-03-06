@@ -1,26 +1,26 @@
 <mvc:View
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
-	<!--
+	
    <List
       headerText="{i18n>invoiceListTitle}"
       class="sapUiResponsiveMargin"
       width="auto"
-      items="{invoicejson>/Invoices}">
- 
+      items="{invoice>/Invoices}">	
       <items>
          <ObjectListItem
-            title="{invoicejson>Quantity} x {invoicejson>ProductName}"/>
+             title="{invoice>Quantity} x {invoice>ProductName}"/>
       </items>
    </List>   
-    -->
+        
+    <!--
     <Text 
-		text="{prueba>ProductName}"
+		text="{ShipperName}"
 		class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>				
 				      		
 	<Text 
 		text="{i18n>invoiceListTitle}"
 		class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>				
 				      		
-    
+-->
 </mvc:View>

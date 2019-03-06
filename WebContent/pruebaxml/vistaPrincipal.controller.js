@@ -25,7 +25,8 @@ sap.ui.define([
         	 bundleName: "i18n.i18n"
           });
          this.getView().setModel(i18nModel, "i18n");
-         
+        
+
       },
       onShowHello : function () {
     	  // leemos el mensaje de i18n_es model
